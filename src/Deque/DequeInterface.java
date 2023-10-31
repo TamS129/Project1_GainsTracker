@@ -1,6 +1,6 @@
 package Deque.Deque;
-import java.util.Iterator;
 
+import java.util.Iterator;
 public interface DequeInterface<T> extends Iterable<T>{
     /** Adds a new entry to the front of back of this deque.
      * @param newEntry An object to be added.
@@ -12,7 +12,7 @@ public interface DequeInterface<T> extends Iterable<T>{
      * @return The object at the front or back of the deque.
      * @throws EmptyQueueException if the deque is empty before the operation.
      */
-    public T removeFront();
+    public T removeFront() throws EmptyQueueException;
     public T removeBack();
 
     /** Detects whether this deque is empty.

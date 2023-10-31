@@ -21,8 +21,17 @@ public interface StockLedgerInterface {
      @return  Boolean of if the stock exists in the ledger. */
     public boolean contains(String stockSymbol);
 
-    /** Returns a LedgerEntry object based on stock symbol.
-     @param stockSymbol    The stock's symbol.
-     @return  LedgerEntry object of stock symbol. */
+    /**
+     * Returns a LedgerEntry object based on stock symbol.
+     *
+     * @param stockSymbol The stock's symbol.
+     * @return LedgerEntry object of stock symbol.
+     */
     public LedgerEntry getEntry(String stockSymbol);
+
+    /**
+     * Displays our ArrayList Ledger to Main.
+     * No parameters
+     */
+    public void displayLedger();
 }
